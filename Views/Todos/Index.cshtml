@@ -21,6 +21,9 @@
             <th>
                 @Html.DisplayNameFor(model => model.Started)
             </th>
+             <th>
+                @Html.DisplayNameFor(model => model.Priority)
+            </th>
         </tr>
     </thead>
     <tbody>
@@ -34,6 +37,9 @@
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Started)
+            </td>
+             <td>
+                @Html.DisplayFor(modelItem => item.Priority)
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.ID">Edit</a> |
